@@ -6,6 +6,7 @@ import { Diferenciais } from './components/Diferenciais';
 import { QuemSomos } from './components/QuemSomos';
 import { Depoimentos } from './components/Depoimentos';
 import { TrabalhosExecutados } from './components/TrabalhosExecutados';
+import { Faq } from './components/Faq';
 
 export const App: React.FC = () => {
   return (
@@ -47,9 +48,13 @@ export const App: React.FC = () => {
         <TrabalhosExecutados />
 
         {/* 
-          Marcadores de âncoras semânticos para as próximas etapas
+          Etapa 8: Seção FAQ | Perguntas Frequentes Oficial
         */}
-        <div id="faq" className="sr-only">FAQ</div>
+        <Faq />
+
+        {/* 
+          Marcador de âncora semântico para a próxima etapa (Contatos / Rodapé)
+        */}
         <div id="contatos" className="sr-only">Contatos</div>
       </main>
     </div>
