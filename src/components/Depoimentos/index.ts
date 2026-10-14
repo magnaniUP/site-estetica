@@ -1,0 +1,2 @@
+export { Depoimentos } from './Depoimentos';
+

@@ -24,13 +24,13 @@ export const Diferenciais: React.FC = () => {
     <section
       id="diferenciais"
       aria-labelledby="diferenciais-heading"
-      className="w-full bg-[#FAF5F6] py-14 sm:py-16 lg:py-0 border-b border-brand-pink/10 transition-colors relative overflow-hidden"
+      className="w-full bg-[#FAF5F6] pt-12 sm:pt-16 pb-0 lg:py-0 border-b border-brand-pink/10 transition-colors relative overflow-hidden"
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row items-stretch justify-between">
           
           {/* ÁREA ESQUERDA + CENTRAL (CONTAINER COM PADDING) */}
-          <div className="w-full lg:w-[58%] xl:w-[56%] flex flex-col md:flex-row items-start justify-between gap-8 sm:gap-10 lg:gap-6 xl:gap-8 px-4 sm:px-6 lg:pl-8 xl:pl-12 lg:pr-4 py-0 lg:py-16 xl:py-20">
+          <div className="w-full lg:w-[58%] xl:w-[56%] flex flex-col md:flex-row items-start justify-between gap-8 sm:gap-10 lg:gap-6 xl:gap-8 px-4 sm:px-6 lg:pl-8 xl:pl-12 lg:pr-4 pt-0 pb-6 sm:pb-8 lg:py-16 xl:py-20">
             
             {/* 1. BLOCO DE APRESENTAÇÃO */}
             <div className="w-full md:w-[260px] lg:w-[240px] xl:w-[270px] flex-shrink-0 flex flex-col justify-start text-left">
@@ -147,10 +147,10 @@ export const Diferenciais: React.FC = () => {
 
           </div>
 
-          {/* 3. FOTOGRAFIA DO AMBIENTE + ELEMENTOS MANUSCRITOS (INTEGRAÇÃO TOTAL À DIREITA) */}
-          <div className="w-full lg:w-[42%] xl:w-[44%] relative min-h-[300px] sm:min-h-[360px] lg:min-h-[440px] flex items-center mt-6 lg:mt-0">
-            {/* Foto com transição horizontal suave no Desktop */}
-            <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] lg:min-h-[440px] overflow-hidden lg:rounded-none rounded-[16px] mx-4 sm:mx-6 lg:mx-0">
+          {/* 3. FOTOGRAFIA DO AMBIENTE + ELEMENTOS MANUSCRITOS (INTEGRAÇÃO TOTAL À DIREITA NO DESKTOP E AO FUNDO NO TABLET/MOBILE) */}
+          <div className="w-full lg:w-[42%] xl:w-[44%] relative min-h-[300px] sm:min-h-[380px] lg:min-h-[460px] flex items-center mt-4 sm:mt-6 lg:mt-0">
+            {/* Foto sem bordas ou formato de card em nenhuma resolução */}
+            <div className="relative w-full h-[300px] sm:h-[380px] lg:h-full lg:min-h-[460px] overflow-hidden rounded-none">
               <picture>
                 <source srcSet={clinicRoomWebp} type="image/webp" />
                 <img
@@ -160,20 +160,38 @@ export const Diferenciais: React.FC = () => {
                   height={720}
                   loading="eager"
                   decoding="async"
-                  className="w-full h-full object-cover object-center lg:object-left"
+                  className="w-full h-full object-cover object-[55%_center] lg:object-left"
                 />
               </picture>
 
-              {/* Degradê horizontal suave de fusão com a cor de fundo (Desktop) */}
+              {/* Degradê horizontal suave no Desktop */}
               <div
                 className="hidden lg:block absolute inset-y-0 left-0 w-24 xl:w-36 bg-gradient-to-r from-[#FAF5F6] via-[#FAF5F6]/70 to-transparent pointer-events-none z-10"
+                aria-hidden="true"
+              />
+
+              {/* Integração completa no Mobile e Tablet (sem efeito de card): fusão superior, inferior e laterais */}
+              <div
+                className="lg:hidden absolute inset-x-0 top-0 h-24 sm:h-36 bg-gradient-to-b from-[#FAF5F6] via-[#FAF5F6]/80 to-transparent pointer-events-none z-10"
+                aria-hidden="true"
+              />
+              <div
+                className="lg:hidden absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-[#FAF5F6] via-[#FAF5F6]/75 to-transparent pointer-events-none z-10"
+                aria-hidden="true"
+              />
+              <div
+                className="lg:hidden absolute inset-y-0 left-0 w-8 sm:w-16 bg-gradient-to-r from-[#FAF5F6]/50 to-transparent pointer-events-none z-10"
+                aria-hidden="true"
+              />
+              <div
+                className="lg:hidden absolute inset-y-0 right-0 w-8 sm:w-16 bg-gradient-to-l from-[#FAF5F6]/50 to-transparent pointer-events-none z-10"
                 aria-hidden="true"
               />
             </div>
 
             {/* Frase manuscrita e coração decorativo flutuante */}
             <div
-              className="absolute top-4 right-8 sm:top-6 sm:right-12 lg:top-8 lg:right-10 xl:top-10 xl:right-14 pointer-events-none select-none z-20 -rotate-[8deg]"
+              className="absolute top-4 right-4 sm:top-6 sm:right-8 lg:top-8 lg:right-10 xl:top-10 xl:right-14 pointer-events-none select-none z-20 -rotate-[8deg]"
               aria-hidden="true"
             >
               <img
@@ -181,7 +199,7 @@ export const Diferenciais: React.FC = () => {
                 alt="Mais que cursos, uma nova fase! ♡"
                 width={105}
                 height={113}
-                className="w-[90px] sm:w-[110px] lg:w-[125px] xl:w-[140px] h-auto drop-shadow-[0_2px_4px_rgba(239,42,116,0.18)]"
+                className="w-[95px] sm:w-[115px] lg:w-[125px] xl:w-[140px] h-auto drop-shadow-[0_2px_4px_rgba(239,42,116,0.22)]"
               />
             </div>
           </div>

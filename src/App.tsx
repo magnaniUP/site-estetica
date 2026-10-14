@@ -3,6 +3,9 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Courses } from './components/Courses';
 import { Diferenciais } from './components/Diferenciais';
+import { QuemSomos } from './components/QuemSomos';
+import { Depoimentos } from './components/Depoimentos';
+import { TrabalhosExecutados } from './components/TrabalhosExecutados';
 
 export const App: React.FC = () => {
   return (
@@ -29,10 +32,23 @@ export const App: React.FC = () => {
         <Diferenciais />
 
         {/* 
+          Etapa 5: Seção Quem Somos (Amanda Sandole. Ensino com propósito.)
+        */}
+        <QuemSomos />
+
+        {/* 
+          Etapa 6: Seção Depoimentos (Quem já viveu, recomenda.)
+        */}
+        <Depoimentos />
+
+        {/* 
+          Etapa 7: Seção Trabalhos Executados Oficial
+        */}
+        <TrabalhosExecutados />
+
+        {/* 
           Marcadores de âncoras semânticos para as próximas etapas
         */}
-        <div id="trabalhos" className="sr-only">Trabalhos Executados</div>
-        <div id="quem-somos" className="sr-only">Quem Somos</div>
         <div id="faq" className="sr-only">FAQ</div>
         <div id="contatos" className="sr-only">Contatos</div>
       </main>
