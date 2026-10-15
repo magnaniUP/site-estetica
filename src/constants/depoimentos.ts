@@ -56,7 +56,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
 ];
 
 export const WHATSAPP_MORE_TESTIMONIALS_MESSAGE =
-  'Olá! Gostaria de ver mais depoimentos de alunas dos cursos de estética da Amanda Sandole.';
+  'Olá gostaria de mais informações';
 
 export const getMoreTestimonialsWhatsAppUrl = (): string => {
   return getWhatsAppUrl(WHATSAPP_MORE_TESTIMONIALS_MESSAGE);

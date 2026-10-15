@@ -71,8 +71,8 @@ export const TRABALHOS_DATA: TrabalhosSectionData = {
   title: 'Veja as transformações reais realizadas por Amanda Sandole.',
   subtitle: 'Beleza, técnica e confiança em cada detalhe.',
   ctaText: 'AGENDE JÁ O SEU PROCEDIMENTO',
-  whatsappMessage: 'Olá Amanda! Gostaria de agendar um procedimento estético com você.',
-  getCtaUrl: () => getWhatsAppUrl('Olá Amanda! Gostaria de agendar um procedimento estético com você.'),
+  whatsappMessage: 'Olá gostaria de mais informações',
+  getCtaUrl: () => getWhatsAppUrl('Olá gostaria de mais informações'),
   disclaimer: '* Fotografias reais de procedimentos realizados por Amanda Sandole. Resultados podem variar conforme avaliação individual e resposta biológica de cada organismo.',
   items: [
     {

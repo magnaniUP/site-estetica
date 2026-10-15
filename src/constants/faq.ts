@@ -36,7 +36,7 @@ export const FAQ_DATA: FaqSectionData = {
   title: 'Tire suas dúvidas',
   subtitle: 'Aqui você encontra as principais dúvidas sobre os nossos cursos. Se preferir, fale com a gente pelo WhatsApp!',
   buttonText: 'Falar agora pelo WhatsApp',
-  getWhatsAppUrl: () => getWhatsAppUrl('Olá! Gostaria de tirar algumas dúvidas sobre os cursos da Amanda Sandole.'),
+  getWhatsAppUrl: () => getWhatsAppUrl('Olá gostaria de mais informações'),
   image: {
     png: faqTreatmentPng,
     png2x: faqTreatment2xPng,

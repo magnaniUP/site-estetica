@@ -54,7 +54,7 @@ export const DIFFERENTIALS: DifferentialItem[] = [
 ];
 
 export const DIFERENCIAIS_SECTION_WHATSAPP_MESSAGE =
-  'Olá! Gostaria de garantir minha vaga e saber mais sobre a metodologia e diferenciais dos cursos da Amanda Sandole.';
+  'Olá gostaria de mais informações';
 
 export const getDiferenciaisWhatsAppUrl = (): string => {
   return getWhatsAppUrl(DIFERENCIAIS_SECTION_WHATSAPP_MESSAGE);

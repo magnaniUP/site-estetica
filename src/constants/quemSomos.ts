@@ -61,7 +61,7 @@ export const QUEM_SOMOS_INDICATORS: QuemSomosIndicator[] = [
 ];
 
 export const WHATSAPP_QUEM_SOMOS_MESSAGE =
-  'Olá, Amanda! Estava lendo sobre você e gostaria de garantir minha vaga nos cursos de estética.';
+  'Olá gostaria de mais informações';
 
 export const getQuemSomosWhatsAppUrl = (): string => {
   return getWhatsAppUrl(WHATSAPP_QUEM_SOMOS_MESSAGE);

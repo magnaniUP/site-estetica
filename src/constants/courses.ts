@@ -47,7 +47,7 @@ export const COURSES: Course[] = [
     alt: 'Massagem relaxante em ambiente profissional de estética',
     seoKeyword: 'Curso de massagem relaxante',
     description: 'Aprenda manobras suaves, técnicas de descompressão muscular e aromaterapia para proporcionar bem-estar profundo.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Massagem Relaxante da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'massagem-modeladora',
@@ -59,7 +59,7 @@ export const COURSES: Course[] = [
     alt: 'Tratamento estético corporal com massagem modeladora profissional',
     seoKeyword: 'Curso de massagem modeladora',
     description: 'Técnicas manuais vigorosas e profundas para contorno corporal, redução de medidas e melhora da circulação.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Massagem Modeladora da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'drenagem-linfatica',
@@ -71,7 +71,7 @@ export const COURSES: Course[] = [
     alt: 'Procedimento de drenagem linfática corporal realizado por profissional de estética',
     seoKeyword: 'Curso de drenagem linfática',
     description: 'Método fisiológico de drenagem manual para eliminação de toxinas, redução de retenção hídrica e pós-operatório.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Drenagem Linfática da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'hidrolipoclasia-nao-aspirativa',
@@ -84,7 +84,7 @@ export const COURSES: Course[] = [
     alt: 'Aplicação de ultrassom estético em procedimento de hidrolipoclasia não aspirativa',
     seoKeyword: 'Curso de hidrolipoclasia não aspirativa ultrassônica',
     description: 'Protocolo avançado para quebra de adiposidade localizada combinando soro hipotônico e cavitação ultrassônica.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Hidrolipoclasia Não Aspirativa da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'ventosaterapia',
@@ -96,7 +96,7 @@ export const COURSES: Course[] = [
     alt: 'Aplicação de ventosas de vidro em procedimento terapêutico de ventosaterapia',
     seoKeyword: 'Curso de ventosaterapia estética',
     description: 'Técnica milenar com aplicação moderna para alívio de tensões, oxigenação tecidual e remodelagem estética.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Ventosaterapia da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'intradermoterapia',
@@ -108,7 +108,7 @@ export const COURSES: Course[] = [
     alt: 'Tratamento de intradermoterapia facial para rejuvenescimento e hidratação tecidual',
     seoKeyword: 'Curso de intradermoterapia',
     description: 'Aplicação localizada de ativos estéticos estéreis (mesoterapia) para rejuvenescimento, flacidez e gordura localizada.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Intradermoterapia da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'microagulhamento',
@@ -120,7 +120,7 @@ export const COURSES: Course[] = [
     alt: 'Procedimento estético de microagulhamento com dermapen profissional',
     seoKeyword: 'Curso de microagulhamento',
     description: 'Indução percutânea de colágeno (IPCA) com Dermapen e drug delivery para cicatrizes, manchas e rejuvenescimento.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Microagulhamento da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'jato-de-plasma',
@@ -132,7 +132,7 @@ export const COURSES: Course[] = [
     alt: 'Aplicação de jato de plasma para rejuvenescimento e lifting não cirúrgico',
     seoKeyword: 'Curso de jato de plasma',
     description: 'Tratamento de alta precisão para blefaroplastia não cirúrgica, retração de pálpebras, linhas de expressão e rugas.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Jato de Plasma da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'limpeza-de-pele',
@@ -144,7 +144,7 @@ export const COURSES: Course[] = [
     alt: 'Protocolo completo de limpeza de pele profunda em clínica de estética',
     seoKeyword: 'Curso de limpeza de pele',
     description: 'Protocolo minucioso de higienização, emoliência, extração indolor, alta frequência e fototerapia para pele impecável.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Limpeza de Pele da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
   {
     id: 'skinbooster',
@@ -156,13 +156,13 @@ export const COURSES: Course[] = [
     alt: 'Procedimento de skinbooster para hidratação profunda e luminosidade da pele',
     seoKeyword: 'Curso de skinbooster',
     description: 'Hidratação injetável profunda com ácido hialurônico de baixa reticulação para devolver viço, elasticidade e brilho natural.',
-    whatsappMessage: 'Olá! Gostaria de saber mais informações e valores sobre o Curso de Skinbooster da Amanda Sandole.',
+    whatsappMessage: 'Olá gostaria de mais informações',
   },
 ];
 
 export const COURSES_SECTION_WHATSAPP_MESSAGE =
-  'Olá! Gostaria de saber mais sobre a grade completa dos cursos de estética profissional da Amanda Sandole.';
+  'Olá gostaria de mais informações';
 
-export const getCourseWhatsAppUrl = (course: Course): string => {
-  return getWhatsAppUrl(course.whatsappMessage);
+export const getCourseWhatsAppUrl = (course?: Course): string => {
+  return getWhatsAppUrl('Olá gostaria de mais informações');
 };

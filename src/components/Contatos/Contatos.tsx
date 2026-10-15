@@ -41,41 +41,44 @@ export const Contatos: React.FC = () => {
       <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-5 md:gap-4 lg:gap-8">
           
-          {/* 1. Logotipo Oficial Amanda Sandole (Esquerda) */}
-          <div className="flex-shrink-0 flex items-center justify-center md:justify-start">
-            <a
-              href="#home"
-              className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#BA3E6E] rounded-md transition-transform duration-200 hover:scale-[1.02]"
-              aria-label="Amanda Sandole - Ir para o início da página"
+          {/* Container Mobile: coloca a logo e a frase lado a lado; no Desktop (md:contents) atuam diretamente na linha com justify-between */}
+          <div className="w-full md:w-auto flex items-center justify-between sm:justify-center md:justify-start gap-2.5 sm:gap-6 md:gap-0 md:contents">
+            {/* 1. Logotipo Oficial Amanda Sandole (Esquerda) */}
+            <div className="flex-shrink-0 flex items-center justify-start">
+              <a
+                href="#home"
+                className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#BA3E6E] rounded-md transition-transform duration-200 hover:scale-[1.02]"
+                aria-label="Amanda Sandole - Ir para o início da página"
+              >
+                <img
+                  src={logoContatos}
+                  srcSet={`${logoContatos} 1x, ${logoContatos2x} 2x`}
+                  alt={CONTATOS_DATA.logoAlt}
+                  width={202}
+                  height={43}
+                  className="h-[28px] sm:h-[34px] md:h-[42px] lg:h-[44px] w-auto object-contain filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.12)]"
+                  loading="eager"
+                  decoding="sync"
+                />
+              </a>
+            </div>
+
+            {/* 2. Frase Manuscrita Tilted (Ao lado da logo no mobile, Centro no desktop) */}
+            <div
+              className="flex-shrink-0 flex items-center justify-end md:justify-center -rotate-[4deg] md:-rotate-[6deg] transform transition-transform duration-300 hover:-rotate-[4deg]"
+              aria-hidden="true"
             >
               <img
-                src={logoContatos}
-                srcSet={`${logoContatos} 1x, ${logoContatos2x} 2x`}
-                alt={CONTATOS_DATA.logoAlt}
-                width={202}
-                height={43}
-                className="h-[36px] sm:h-[40px] md:h-[42px] lg:h-[44px] w-auto object-contain filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.12)]"
+                src={phraseContatos}
+                srcSet={`${phraseContatos} 1x, ${phraseContatos2x} 2x, ${phraseContatos4x} 4x`}
+                alt={CONTATOS_DATA.headlinePhrase}
+                width={171}
+                height={54}
+                className="w-[125px] sm:w-[150px] md:w-[185px] lg:w-[205px] h-auto object-contain select-none pointer-events-none drop-shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
                 loading="eager"
                 decoding="sync"
               />
-            </a>
-          </div>
-
-          {/* 2. Frase Manuscrita Tilted (Centro) */}
-          <div
-            className="flex-shrink-0 flex items-center justify-center -rotate-[5deg] md:-rotate-[6deg] transform transition-transform duration-300 hover:-rotate-[4deg]"
-            aria-hidden="true"
-          >
-            <img
-              src={phraseContatos}
-              srcSet={`${phraseContatos} 1x, ${phraseContatos2x} 2x, ${phraseContatos4x} 4x`}
-              alt={CONTATOS_DATA.headlinePhrase}
-              width={171}
-              height={54}
-              className="w-[155px] sm:w-[175px] md:w-[185px] lg:w-[205px] h-auto object-contain select-none pointer-events-none drop-shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
-              loading="eager"
-              decoding="sync"
-            />
+            </div>
           </div>
 
           {/* 3. CTA WhatsApp + Subtexto (Direita) */}

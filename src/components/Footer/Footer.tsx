@@ -63,7 +63,7 @@ const YouTubeIcon: React.FC<{ className?: string }> = ({ className = 'w-4 h-4' }
 export const Footer: React.FC = () => {
   return (
     <footer
-      className="relative w-full bg-[#FCF3F5] text-brand-slate py-4 sm:py-5 lg:py-5.5 border-t border-[#EF2A74]/15 select-none transition-colors"
+      className="relative w-full bg-[#F8D7E3] text-brand-slate py-4 sm:py-5 lg:py-5.5 border-t border-[#EF2A74]/20 select-none transition-colors"
       role="contentinfo"
       aria-label="Rodapé do site Amanda Sandole"
     >
@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
           
           {/* 1. Direitos Autorais (Esquerda no desktop) */}
           <div className="flex-shrink-0 text-center lg:text-left order-3 lg:order-1">
-            <p className="text-[11px] sm:text-[11.5px] lg:text-[11px] xl:text-[12px] text-[#7A6B74] font-normal tracking-tight whitespace-nowrap">
+            <p className="text-[11px] sm:text-[11.5px] lg:text-[11px] xl:text-[12px] text-[#5C4A54] font-medium tracking-tight whitespace-nowrap">
               {FOOTER_DATA.copyrightText}
             </p>
           </div>
@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
               <a
                 key={item.id}
                 href={item.href}
-                className="text-[11px] sm:text-[12px] lg:text-[11px] xl:text-[12.5px] text-[#4B5E76] hover:text-brand-pink transition-colors duration-200 font-medium py-1 px-0.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded whitespace-nowrap"
+                className="text-[11px] sm:text-[12px] lg:text-[11px] xl:text-[12.5px] text-[#2E384D] hover:text-brand-pink transition-colors duration-200 font-semibold py-1 px-0.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded whitespace-nowrap"
               >
                 {item.label}
               </a>
@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
                 href={FOOTER_DATA.socialLinks[0].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4B5E76] hover:text-brand-pink transition-colors p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded"
+                className="text-[#2E384D] hover:text-brand-pink transition-colors p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded"
                 aria-label={FOOTER_DATA.socialLinks[0].ariaLabel}
               >
                 <InstagramIcon className="w-4 h-4" />
@@ -111,7 +111,7 @@ export const Footer: React.FC = () => {
                 href={FOOTER_DATA.socialLinks[1].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4B5E76] hover:text-brand-pink transition-colors p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded"
+                className="text-[#2E384D] hover:text-brand-pink transition-colors p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded"
                 aria-label={FOOTER_DATA.socialLinks[1].ariaLabel}
               >
                 <FacebookIcon className="w-4 h-4" />
@@ -121,7 +121,7 @@ export const Footer: React.FC = () => {
                 href={FOOTER_DATA.socialLinks[2].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4B5E76] hover:text-brand-pink transition-colors p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded"
+                className="text-[#2E384D] hover:text-brand-pink transition-colors p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-pink rounded"
                 aria-label={FOOTER_DATA.socialLinks[2].ariaLabel}
               >
                 <YouTubeIcon className="w-4 h-4" />
