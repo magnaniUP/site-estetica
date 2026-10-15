@@ -7,6 +7,8 @@ import { QuemSomos } from './components/QuemSomos';
 import { Depoimentos } from './components/Depoimentos';
 import { TrabalhosExecutados } from './components/TrabalhosExecutados';
 import { Faq } from './components/Faq';
+import { Contatos } from './components/Contatos';
+import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   return (
@@ -53,10 +55,15 @@ export const App: React.FC = () => {
         <Faq />
 
         {/* 
-          Marcador de âncora semântico para a próxima etapa (Contatos / Rodapé)
+          Etapa 9: Seção de Contatos | CTA Final Oficial
         */}
-        <div id="contatos" className="sr-only">Contatos</div>
+        <Contatos />
       </main>
+
+      {/* 
+        Etapa 10: Rodapé do Site | Footer Oficial
+      */}
+      <Footer />
     </div>
   );
 };

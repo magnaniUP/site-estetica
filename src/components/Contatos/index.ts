@@ -1,0 +1,2 @@
+export { Contatos } from './Contatos';
+
